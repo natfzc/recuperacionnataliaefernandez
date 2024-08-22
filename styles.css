@@ -1,0 +1,344 @@
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.barra-superior {
+    background-color: #68789f;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+    width: auto; /* mantiene la proporción del logo */
+}
+
+.enlaces {
+    display: flex;
+    flex-grow: 1;
+
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.enlaces a {
+    color: #414e63;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+}
+
+.buscar {
+    display: flex;
+}
+
+.buscar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.buscar button {
+    padding: 5px 10px;
+    background-color: #414e63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    background-image: url(./IMAGENES/foto\ hero.png); 
+    background-size: cover; /* la imagen cubre todo el área disponible */
+    background-position: center; /* centra la imagen */
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.texto-hero {
+    position: relative;
+    z-index: 2; /*texto esté por encima del fondo */
+    max-width: 80%; /* limita el ancho del texto para que no ocupe todo el espacio */
+}
+
+.texto-hero h1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2.5em; 
+    margin: 0.5em 0;
+}
+
+.texto-hero p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.texto-hero button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* boton con fondo transparente */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo para que el texto resalte */
+    z-index: 1;
+}
+
+
+.categorias-populares, .nuevos-productos, .inspiracion {
+    padding: 20px;
+}
+
+.categorias-populares h2, .nuevos-productos h2, .inspiracion h2 {
+    text-align: center;
+    background-color: #001f32;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.categoria {
+    flex: 1 1 22%; /* ancho de cada categoría */
+    max-width: 22%; /* el ancho sea el mismo para todas */
+    margin: 10px;
+    position: relative;
+}
+
+.categoria img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center; /* centra la imagen dentro del contenedor */
+}
+
+.categoria p {
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 10px 0 5px;
+    background-color: #68789f;
+}
+
+
+.nuevos-productos {
+    padding: 20px;
+}
+
+.nuevos-productos h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; /* espacio entre  productos */
+}
+
+.producto {
+    flex: 1;
+    max-width: 30%;
+    margin: 0 10px; /* Margen horizontal */
+    position: relative;
+    overflow: hidden; /* oculta cualquier contenido que sobresalga */
+    text-align: center; 
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* imagen cubra todo el contenedor sin deformarse */
+    transition: transform 0.3s ease; /* transicion*/
+}
+
+.producto:hover img {
+    transform: scale(1.05); /* efecto de zoom al pasar el mouse sobre la imagen */
+}
+
+.producto p {
+    margin: 10px 0; 
+    font-size: 1rem; 
+    color: #333; 
+}
+
+.inspiracion {
+    padding: 20px;
+}
+
+.inspiracion h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #68789f;
+}
+
+.inspiracion .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.inspiracion .tarjeta {
+    flex: 1 1 22%; 
+    max-width: 22%; 
+    aspect-ratio: 2 / 3; /* relación de aspecto vertical */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd; /* borde */
+    border-radius: 8px; /* eedondea las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* añade una sombra */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.inspiracion .tarjeta:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse sobre la tarjeta */
+}
+
+.inspiracion .tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* la imagen cubra todo el contenedor sin deformarse */
+    object-position: center; /*centra la imagen en su contenedor */
+}
+
+footer {
+    background-color: #001f32;
+    color: #fff;
+    padding: 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.suscribirse form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suscribirse input {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.suscribirse button {
+    padding: 10px;
+    background-color: #434548;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+        .categorias {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .categoria {
+            max-width: 80%; /* Ajusta el tamaño para pantallas medianas */
+            margin: 15px 0;
+        }
+    
+    .navegacion-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .enlaces a {
+        margin: 10px 0;
+    }
+
+    .buscar {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buscar input {
+        width: 80%; /* Asegura que el campo de búsqueda sea más accesible en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px; /* ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .buscar input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .inspirate .imagen {
+        flex: 1 1 100%; /* asegura que las imágenes ocupen todo el ancho en móviles */
+        height: 200px; /* ajusta la altura para pantallas pequeñas */
+    }
+
+    .inspirate {
+        gap: 10px; /* reduce el espacio entre imágenes en móviles */
+    }
+
+    /* ajuste del enlace de Instagram */
+    p a {
+        font-size: 16px; /* aumenta ligeramente el tamaño de la fuente para mejor legibilidad en móviles */
+        color: #ffffff;
+    }
+}

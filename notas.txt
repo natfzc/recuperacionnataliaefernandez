@@ -1,0 +1,42 @@
+html
+a href enlace
+h, titulos y encabezados
+p, parrafos
+link, conectar archivos css o js
+
+
+formato de parrafo:
+<b> - bold
+strong important text
+i - italica
+
+
+img src
+alt 
+
+ul/li - listas
+
+CSS
+# - identificador
+z-index el texto encima del fondo
+hero::before: Añade una capa semi-transparente sobre la imagen de fondo para que el texto sea más legible.
+
+
+FOOTER INSTAGRAM
+target="_blank": Abre el enlace en una nueva pestaña cuando alguien haga clic.
+rel="noopener noreferrer": Añade seguridad al abrir el enlace en una nueva pestaña, evitando posibles vulnerabilidades.
+
+flex: 1 1 22%; /* Controla el ancho de las tarjetas */
+    max-width: 22%; /* Limita el ancho máximo */
+    aspect-ratio: 2 / 3; /* Proporciona una relación de aspecto vertical */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd; /* Añade un borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    transition: transform 0.3s ease; /* Transición suave */
+
+   display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
